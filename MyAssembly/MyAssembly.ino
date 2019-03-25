@@ -32,6 +32,10 @@ double processString(String sInput) {
     ans = funAdd(stToken2.atof(), stToken3.atof());
   else if (stToken1.toString() == "sub")
     ans = funSub(stToken2.atof(), stToken3.atof());
+  else if (stToken1.toString() == "mul")
+    ans = funMul(stToken2.atof(), stToken3.atof());
+  else if (stToken1.toString() == "div")
+    ans = funDiv(stToken2.atof(), stToken3.atof());
   return ans;
 }
 
@@ -45,4 +49,11 @@ double funAdd(double a, double b) {
 
 double funSub(double a, double b) {
   return a - b;
+}
+double funMul(double a, double b) {
+  return a * b;
+}
+
+double funDiv(double a, double b) {
+  return a / b;
 }
